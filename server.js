@@ -4,44 +4,147 @@ const url = require('url');
 const querystring = require('querystring');
 
 
-
 const names = {
   a: {
     first: [
-      'kat', 'kyle', 'kevin', 'kayden', 'karl', 'kameron', 'kaydence', 'korp'
+      'Bubbly',
+      'Barnacle',
+      'Jelly',
+      'Coral',
+      'Bubbles',
+      'Randy',
+      'Jeff',
+      'Karl',
+      'Edward',
+      'Plank',
+      'Sharon',
+      'Sandy',
+      'Gurt',
+      'Larry',
+      'Reggie',
+      'Canadia',
+      'Beachela',
+      'Shelly',
+      'Kelsey',
+      'Reefa',
+      'Pearl',
+      'Gary',
+      'Crabby',
+      'Rocky',
+      'Salty',
+      'Sunny',
+      'Krusty',
+      'Finny',
+      'Clammy',
+      'Shrimpy',
+      'Seaweed'
     ],
     last: [
-      'gina', 'gerry', 'george', 'gervin', 'grake', 'gorp'
+      'Tentacles',
+      'Fins',
+      'Pants',
+      'Gills',
+      'Reef',
+      'Cheeks',
+      'Claws',
+      'Shell',
+      'Bubble',
+      'Coral',
+      'Kelp',
+      'Lagoon',
+      'Sand',
+      'Seas',
+      'Wave'
     ]
   },
+
   b: {
     first: [
-      'vat', 'vyle', 'vevin', 'vayden', 'varl', 'vameron', 'vaydence', 'vorp'
+      'Soggy',
+      'Squishy',
+      'Salty',
+      'Kelp',
+      'Wobbly',
+      'Slimy',
+      'Spongy',
+      'Crusty',
+      'Floppy',
+      'Bouncy',
+      'Drippy',
+      'Fishy',
+      'Goopy',
+      'Sandy',
+      'Splashy',
+      'Wavy',
+      'Funky',
+      'Clammy',
+      'Damp',
+      'Mushy'
     ],
     last: [
-      'hina', 'herry', 'heorge', 'hervin', 'hrake', 'horp'
+      'Bubble',
+      'Fish',
+      'Flippers',
+      'Bottom',
+      'Clam',
+      'Bucket',
+      'Patty',
+      'Rock',
+      'Boat',
+      'Anchor',
+      'Shrimp',
+      'Krab',
+      'Sponge',
+      'Squid',
+      'Seaweed'
     ]
   },
+
   c: {
     first: [
-      'kat', 'kyle', 'kevin', 'kayden', 'karl', 'kameron', 'kaydence', 'korp'
+      'Lazy',
+      'Chill',
+      'Sleepy',
+      'Sandy',
+      'Goofy',
+      'Grumpy',
+      'Happy',
+      'Hungry',
+      'Tiny',
+      'Big',
+      'Slow',
+      'Sneaky',
+      'Smelly',
+      'Loopy',
+      'Broke',
+      'Lucky',
+      'Wacky',
+      'Moody',
+      'Nervous',
+      'Dizzy'
     ],
     last: [
-      'gina', 'gerry', 'george', 'gervin', 'grake', 'gorp'
+      'Snail',
+      'Shell',
+      'Star',
+      'Plankton',
+      'Puff',
+      'Lobster',
+      'Jellyfish',
+      'Krab',
+      'Squid',
+      'Sponge',
+      'Minnow',
+      'Seahorse',
+      'Barnacle',
+      'Starfish',
+      'Guppy'
     ]
-  },
-  d: {
-    first: [
-      'vat', 'vyle', 'vevin', 'vayden', 'varl', 'vameron', 'vaydence', 'vorp'
-    ],
-    last: [
-      'hina', 'herry', 'heorge', 'hervin', 'hrake', 'horp'
-    ]
-  },
+  }
 }
 
 function listTaker(list) {
-  return listTaker[Math.floor(Math.random() * list.length)]  //<-- randomizing a number
+  return list[Math.floor(Math.random() * list.length)]  //<-- randomizing a number
 }
 
 
@@ -83,7 +186,7 @@ const server = http.createServer(function (req, res) {
     const name = listTaker(group.first) + ' ' + listTaker(group.last)
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({name: name}))
+    res.end(JSON.stringify({ name: name }))
   }
 
 

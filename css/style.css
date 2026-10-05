@@ -3,7 +3,7 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -11,7 +11,78 @@
 /* LAYOUT
 /*******************************************/
 
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #123b50;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background:
+    linear-gradient(rgba(12, 35, 64, 0.6), rgba(12, 35, 64, 0.6)),
+    url("../img/bikini_bottom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
+h1 {
+  margin: 0 0 12px;
+  color: #ffe34d;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: center;
+  text-shadow: 2px 2px #123b50;
+}
+
+body>p {
+  margin-bottom: 25px;
+  color: white;
+  text-align: center;
+}
+
+div {
+  margin-bottom: 18px;
+  padding: 20px;
+  background-color: #f5fcff;
+  border-left: 6px solid #ffe34d;
+  border-radius: 10px;
+}
+
+div p {
+  margin: 0 0 12px;
+  font-weight: bold;
+}
+
+#generate {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ffe34d;
+  color: #123b50;
+  border: 2px solid #123b50;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#result {
+  margin: 24px 0 0;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid #ffe34d;
+  border-radius: 10px;
+  font-size: 26px;
+  text-align: center;
+}
+
+#result:empty {
+  display: none;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
