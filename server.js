@@ -196,6 +196,13 @@ const server = http.createServer(function (req, res) {
       res.end();
     });
   }
+  else if (page == '/img/bikini_bottom.jpg'){
+    fs.readFile('img/bikini_bottom.jpg', function (err, data) {
+      res.writeHead(200, { 'Content-Type': 'image/jpeg' });
+      res.write(data);
+      res.end();
+    });
+  }
   else if (page == '/js/main.js') {
     fs.readFile('js/main.js', function (err, data) {
       res.writeHead(200, { 'Content-Type': 'text/javascript' });
