@@ -1,22 +1,43 @@
-# 🎤 Week08 Bootcamp2019a Project: Wu-Tang Name Generator
+# 🍍 Bikini Bottom Name Generator
 
-### Goal: Create a Wu-Tang Clan name generator. Present the user with 5 survey questions and based on those answers randomly generate their name. The name doesn't have to be exact names, but Wu-Tang sounding-ish names. Ex: Childish Gambino (who actually got his name from a Wu-Tang name generator).
+Bikini Bottom Name Generator is a fun JavaScript application that generates a random Bikini Bottom-inspired name for the user.
 
-### How to submit your code for review:
+I built this project to practice working with JavaScript functions, arrays, random values, and DOM manipulation while creating a simple interactive experience inspired by the world of SpongeBob SquarePants.
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## 📸 Project Preview
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+![Bikini Bottom Name Generator project preview](assets/mockup.png)
+
+## ✨ Features
+
+- Generate a random Bikini Bottom-inspired name
+- Display generated results directly on the page
+- Generate a new result with each interaction
+- Simple, themed user interface
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 🧠 What I Learned
+
+This project helped me strengthen my understanding of:
+
+- Working with JavaScript arrays
+- Creating and calling functions
+- Generating random values with `Math.random()`
+- Using `Math.floor()` to select random array elements
+- Working with user interactions
+- Selecting and updating DOM elements
+- Using event listeners
+- Connecting JavaScript logic to an interactive interface
+
+## 🍍 How It Works
+
+The generator uses JavaScript to randomly select values used to create a Bikini Bottom-inspired name.
+
+When the user activates the generator, JavaScript selects the necessary values, combines them into a result, and updates the page with the generated name.
+
+Users can run the generator again to receive a different result.
