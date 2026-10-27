@@ -4,7 +4,7 @@ Bikini Bottom Name Generator is a fun JavaScript application that generates a ra
 
 I built this project to practice working with JavaScript functions, arrays, random values, and DOM manipulation while creating a simple interactive experience inspired by the world of SpongeBob SquarePants.
 
-[Get Your Bikini Bottom Name](https://kelvinimalenowa.github.io/bikini-bottom-name-generator/)
+[Find your Bikini Bottom Name](https://kelvinimalenowa.github.io/bikini-bottom-name-generator/)
 
 ## 📸 Project Preview
 
